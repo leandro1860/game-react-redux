@@ -1,0 +1,31 @@
+.game-card {
+  width: 145px;
+  height: 180px;
+}
+
+.title-card {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 110px;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .game-card {
+    width: 100px;
+    height: 135px;
+  }
+  .title-card {
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .game-card {
+    width: 85px;
+    height: 135px;
+  }
+  .title-card {
+    margin-top: 70px;
+  }
+}

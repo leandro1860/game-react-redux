@@ -1,0 +1,39 @@
+.create-game {
+  margin-top: 230px;
+}
+
+.welcome-title {
+  width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.entry-form form {
+  width: 420px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 375px) and (max-width: 479px) {
+  .create-game {
+    margin-top: 200px;
+  }
+  .welcome-title {
+    width: 300px;
+  }
+  .entry-form form {
+    width: 300px;
+  }
+}
+@media (max-width: 374px) {
+  .create-game {
+    margin-top: 200px;
+  }
+  .welcome-title {
+    width: 250px;
+  }
+  .entry-form form {
+    width: 250px;
+  }
+}

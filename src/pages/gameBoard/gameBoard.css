@@ -1,0 +1,92 @@
+.game-member-board {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.enemy {
+  width: 200px;
+}
+
+.player {
+  width: 200px;
+  margin-top: 60px;
+}
+
+.cards {
+  width: 85%;
+  margin-top: 80px;
+}
+
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .game-member-board {
+    width: 100%;
+    margin-top: 45px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .game-member-board {
+    margin-top: 50px;
+    margin-left: -20px;
+  }
+  .cards {
+    width: 72%;
+    margin-top: 70px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .game-member-board {
+    margin-top: 35px;
+    margin-left: -15px;
+  }
+  .cards {
+    width: 68%;
+    margin-top: 80px;
+  }
+  .player {
+    width: 200px;
+    margin-top: 120px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .cards {
+    width: 65%;
+    margin-top: 95px;
+  }
+  .game-member-board {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .player {
+    margin-top: 100px;
+  }
+}
+@media (min-width: 375px) and (max-width: 479px) {
+  .game-member-board {
+    margin-top: 130px;
+  }
+  .cards {
+    width: 180%;
+    margin-top: 200px;
+  }
+  .player {
+    margin-top: 200px;
+  }
+}
+
+@media (max-width: 374px) {
+  .game-member-board {
+    margin-top: 110px;
+    margin-left: 15px;
+  }
+  .cards {
+    width: 180%;
+    margin-top: 200px;
+  }
+  .player {
+    margin-top: 300px;
+  }
+}

@@ -1,0 +1,116 @@
+.game-board-turns {
+  position: absolute;
+  width: 170px;
+  height: 560px;
+  margin-top: -560px;
+  background-color: black;
+  margin-left: 550px;
+}
+
+.game-turns {
+  background-color: gray;
+  color: white;
+  text-align: center;
+}
+
+.current-past-left {
+  background-color: black;
+  border-style: solid;
+  border-color: gray;
+  width: 135px;
+  height: 400px;
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.game-current {
+  color: white;
+  margin-top: 45px;
+  text-align: center;
+}
+
+.game-past {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.game-left {
+  color: white;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.game-button {
+  width: 135px;
+  height: 50px;
+  margin-top: 80px;
+  margin-left: -2px;
+}
+
+.game-button button {
+  width: 135px;
+}
+
+@media (min-width: 1200px) {
+  .game-board-turns {
+    margin-left: 935px;
+  }
+}
+
+@media (min-width: 991px) and (max-width: 1199px) {
+  .game-board-turns {
+    margin-left: 765px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 990px) {
+  .game-board-turns {
+    margin-top: -550px;
+    height: 550px;
+    margin-left: 540px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .game-board-turns {
+    margin-top: -575px;
+    height: 575px;
+    margin-left: 370px;
+  }
+  .game-button {
+    margin-top: 90px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .game-board-turns {
+    margin-top: -570px;
+    height: 570px;
+    margin-left: 64%;
+  }
+  .game-button {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 375px) and (max-width: 479px) {
+  .game-board-turns {
+    margin-top: -820px;
+    height: 540px;
+    margin-left: 106%;
+  }
+  .game-button {
+    margin-top: 65px;
+  }
+}
+@media (max-width: 374px) {
+  .game-board-turns {
+    margin-top: -920px;
+    height: 640px;
+    margin-left: 370px;
+  }
+  .game-button {
+    margin-top: 140px;
+  }
+}

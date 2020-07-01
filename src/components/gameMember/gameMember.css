@@ -1,0 +1,157 @@
+.game-member {
+  width: 500px;
+}
+
+.card {
+  height: 150px;
+  width: 220px;
+}
+
+.card-member {
+  width: 400px;
+  height: 120px;
+}
+
+.card-shield {
+  position: absolute;
+  width: 260px;
+  height: 120px;
+  margin: 0 0 0 150px;
+}
+
+.card-shield p {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 45px;
+}
+
+.title-member {
+  margin-top: 10px;
+}
+
+.card-body {
+  background-color: black;
+  color: white;
+  height: 119px;
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .card {
+    height: 150px;
+    width: 270px;
+  }
+  .card-member {
+    width: 300px;
+    height: 120px;
+  }
+  .card-shield {
+    width: 180px;
+    height: 120px;
+    margin: 0 0 0 50px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  .card-member {
+    width: 140px;
+    height: 120px;
+  }
+  .card-shield {
+    width: 120px;
+    margin: 0 0 0 -75px;
+    margin-top: 0;
+  }
+  .card-shield p {
+    margin-top: 40px;
+  }
+
+  .title-member {
+    margin-top: -15px;
+  }
+  .card-body {
+    height: 70px;
+    margin-top: 93px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 576px) {
+  .card-member {
+    width: 100px;
+    height: 120px;
+  }
+  .card-shield {
+    width: 120px;
+    margin: 0 0 0 -95px;
+  }
+  .card-shield p {
+    margin-top: 40px;
+  }
+
+  .title-member {
+    margin-top: -20px;
+    width: 200px;
+  }
+  .card-body {
+    height: 70px;
+    margin-top: 70px;
+  }
+  .title-lives {
+    width: 200px;
+    margin-left: -16px;
+  }
+}
+@media (min-width: 375px) and (max-width: 479px) {
+  .card-member {
+    width: 200px;
+    height: 120px;
+  }
+  .card-shield {
+    width: 120px;
+    margin: 0 0 0 -40px;
+  }
+  .card-shield p {
+    margin-top: 40px;
+  }
+
+  .title-member {
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 50px;
+  }
+  .card-body {
+    height: 120px;
+    margin-top: 70px;
+  }
+  .title-lives {
+    width: 200px;
+    margin-left: 35px;
+  }
+}
+@media (max-width: 374px) {
+  .card-member {
+    width: 200px;
+    height: 120px;
+  }
+  .card-shield {
+    width: 120px;
+    margin: 0 0 0 -40px;
+  }
+  .card-shield p {
+    margin-top: 40px;
+  }
+
+  .title-member {
+    margin-top: 10px;
+    width: 200px;
+    margin-left: 50px;
+  }
+  .card-body {
+    height: 120px;
+    margin-top: 70px;
+  }
+  .title-lives {
+    width: 200px;
+    margin-left: 35px;
+  }
+}
