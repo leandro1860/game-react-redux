@@ -13,9 +13,10 @@ function GameMember(props) {
                 <Row>
                   <Col md='5'>
                     <Card.Img
+                      className='card-image'
                       top
                       width='100%'
-                      src='https://placeholdit.imgix.net/~text?txtsize=33&txt=318%C3%97180&w=318&h=180'
+                      src={props.image}
                       alt='Card image cap'
                       bg-dark
                     />
@@ -27,7 +28,7 @@ function GameMember(props) {
                       </Card.Title>
                       <Card.Title className='title-lives'>
                         {" "}
-                        HP: {props.lives}
+                        HP: {props.hp}/{props.maxHp}
                       </Card.Title>
                     </Card.Body>
                   </Col>

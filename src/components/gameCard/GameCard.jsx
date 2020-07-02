@@ -2,12 +2,12 @@ import React from "react";
 import {Card} from "react-bootstrap";
 import "./gameCard.css";
 
-function GameCard() {
+function GameCard(props) {
   return (
     <div>
       <Card className='game-card bg-dark'>
-        <Card.Img src='holder.js/100px180' />
-        <p className='title-card'>Card</p>
+        <p className='card-value'>{props.cardValue}</p>
+        <p className='title-card'>{props.effect}</p>
       </Card>
     </div>
   );
