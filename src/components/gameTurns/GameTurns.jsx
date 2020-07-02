@@ -22,7 +22,7 @@ function GameTurns(props) {
           <h1>{props.turnsLeft}</h1>
         </div>
         <div className='game-button'>
-          <Button>END TURN</Button>
+          <Button onClick={props.click}>END TURN</Button>
         </div>
       </div>
     </div>

@@ -9,12 +9,14 @@ import {useDispatch} from "react-redux";
 import playerDataAction from "../../redux/actions/playerData.action";
 import monsterDataAction from "../../redux/actions/monsterData.action";
 import cardDataAction from "../../redux/actions/cardData.action";
+import gameDataAction from "../../redux/actions/gameData.action";
 
 import playerImage from "./images/playerImage.jpg";
 import "./gameBoard.css";
 
 function GameBoard() {
   const dispatch = useDispatch();
+
   const fullGameData = useSelector(state => state.gameDataReducer.dataGame);
   const gameId = fullGameData.id;
 
@@ -61,9 +63,24 @@ function GameBoard() {
     getCards();
   }, [dispatch, playerDataId]);
 
+  const selectCardId = useSelector(state => state.selectCardReducer.selectCard);
+
+  const getSelectCards = async () => {
+    await axios
+      .post(`http://game.bons.me/api/games/${gameId}/next-turn`, {
+        card: selectCardId
+      })
+      .then(res => {
+        const {data} = res;
+        dispatch(gameDataAction.setData(data.game));
+        console.log(data);
+      });
+  };
+
   const cardData = useSelector(state => state.cardDataReducer.cardData);
   const effect = cardData.map(p => p.effect);
   const cardValue = cardData.map(p => p.value);
+  const cardId = cardData.map(p => p.id);
 
   return (
     <Container>
@@ -90,13 +107,25 @@ function GameBoard() {
           <div className='cards'>
             <Row>
               <Col col='4'>
-                <Card effect={effect[0]} cardValue={cardValue[0]} />
+                <Card
+                  effect={effect[0]}
+                  cardValue={cardValue[0]}
+                  cardId={cardId[0]}
+                />
               </Col>
               <Col col='4'>
-                <Card effect={effect[1]} cardValue={cardValue[1]} />
+                <Card
+                  effect={effect[1]}
+                  cardValue={cardValue[1]}
+                  cardId={cardId[1]}
+                />
               </Col>
               <Col col='4'>
-                <Card effect={effect[2]} cardValue={cardValue[2]} />
+                <Card
+                  effect={effect[2]}
+                  cardValue={cardValue[2]}
+                  cardId={cardId[2]}
+                />
               </Col>
             </Row>
             <div>
@@ -109,6 +138,7 @@ function GameBoard() {
                     : fullGameData.turnsLeft -
                       (fullGameData.turnsLeft - fullGameData.currentTurn)
                 }
+                click={() => getSelectCards()}
               />
             </div>
           </div>
