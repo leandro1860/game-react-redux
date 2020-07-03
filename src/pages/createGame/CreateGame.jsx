@@ -45,7 +45,7 @@ const CreateGame = () => {
                 onChange={handleChangeText}
               />
             </FormGroup>
-            <Button block type='submit' onClick={() => getGame(playerName)}>
+            <Button block onClick={() => getGame(playerName)}>
               LET´S PLAY
             </Button>
           </form>
