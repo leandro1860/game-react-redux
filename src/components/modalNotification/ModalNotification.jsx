@@ -1,16 +1,22 @@
 import React from "react";
-import {Modal, Container} from "react-bootstrap";
 import "./modalNotification.css";
+import {Modal, Button} from "react-bootstrap";
 
 function ModalNotification(props) {
   return (
-    <Container>
-      <div>
-        <Modal.Body id='modal-notification'>
-          <p>{props.message}</p>
-        </Modal.Body>
-      </div>
-    </Container>
+    <>
+      <Modal id='modal-notification' show={props.show}>
+        <Modal.Header>
+          <Modal.Title>{props.result}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>{props.statistics}</Modal.Body>
+        <Modal.Footer>
+          <Button variant='primary' onClick={props.playAgain}>
+            Play again
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </>
   );
 }
 
