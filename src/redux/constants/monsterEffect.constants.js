@@ -1,0 +1,1 @@
+export const MONSTER_EFFECT = "MONSTER_EFFECT";

@@ -1,14 +1,14 @@
 .game-member {
-  width: 500px;
+  width: 100%;
 }
 
 .card {
   height: 150px;
-  width: 220px;
+  width: 100%;
 }
 
 .card-member {
-  width: 400px;
+  width: 100%;
   height: 120px;
 }
 
@@ -16,7 +16,6 @@
   position: absolute;
   width: 260px;
   height: 120px;
-  margin: 0 0 0 150px;
 }
 
 .card-shield p {
@@ -26,12 +25,12 @@
   margin-top: 45px;
 }
 
-.title-member {
+#title-member {
   margin-top: 10px;
+  margin-left: 2px;
 }
 
-.card-body {
-  background-color: black;
+.card-body-member {
   color: white;
   height: 119px;
 }
@@ -43,10 +42,13 @@
   margin-left: auto;
   margin-right: auto;
 }
+#title-lives {
+  width: 200px;
+  margin-left: 2px;
+}
 
-@media (min-width: 769px) and (max-width: 999px) {
+@media (min-width: 1000px) and (max-width: 1199px) {
   .card {
-    height: 150px;
     width: 270px;
   }
   .card-member {
@@ -55,111 +57,179 @@
   }
   .card-shield {
     width: 180px;
+    margin: 0 0 0 20px;
+  }
+  #title-member {
+    margin-top: 7px;
+    margin-left: -11px;
+  }
+  #title-lives {
+    margin-left: -11px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .card {
+    width: 270px;
+  }
+  .card-member {
+    width: 300px;
     height: 120px;
-    margin: 0 0 0 50px;
+  }
+  .card-shield {
+    width: 180px;
+    margin: 0 0 0 20px;
+  }
+  #title-member {
+    margin-top: 7px;
+    margin-left: -11px;
+  }
+  #title-lives {
+    width: 200px;
+    margin-left: -11px;
   }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
   .card-member {
-    width: 140px;
-    height: 120px;
+    width: 120%;
   }
   .card-shield {
     width: 120px;
-    margin: 0 0 0 -75px;
-    margin-top: 0;
+    margin: 0 0 0 13%;
   }
   .card-shield p {
     margin-top: 40px;
   }
 
-  .title-member {
-    margin-top: -15px;
+  #title-member {
+    margin-top: 7px;
+    width: 200px;
+    margin-left: -11px;
+    font-size: 20px;
   }
-  .card-body {
-    height: 70px;
-    margin-top: 93px;
+  .card-card-body-member {
+    height: 95%;
+  }
+  #title-lives {
+    margin-left: -11px;
+    font-size: 18px;
+  }
+  .card-image {
+    height: 100%;
+    position: absolute;
   }
 }
 
 @media (min-width: 480px) and (max-width: 576px) {
   .card-member {
-    width: 100px;
-    height: 120px;
+    width: 123%;
   }
   .card-shield {
-    width: 120px;
-    margin: 0 0 0 -95px;
+    width: 55%;
+    margin: 0 0 0 9%;
   }
   .card-shield p {
-    margin-top: 40px;
+    margin-top: 46px;
+    font-size: 19px;
   }
 
-  .title-member {
-    margin-top: -20px;
+  #title-member {
+    margin-top: 15px;
+    font-size: 17px;
     width: 200px;
+    margin-left: -11px;
   }
-  .card-body {
-    height: 70px;
-    margin-top: 70px;
+  .card-card-body-member {
+    height: 95%;
   }
-  .title-lives {
-    width: 200px;
-    margin-left: -16px;
+  #title-lives {
+    width: 100px;
+    margin-left: -10px;
+    font-size: 13px;
+  }
+  .card-image {
+    height: 100%;
+    position: absolute;
   }
 }
 @media (min-width: 375px) and (max-width: 479px) {
   .card-member {
-    width: 200px;
-    height: 120px;
+    width: 123%;
   }
   .card-shield {
-    width: 120px;
-    margin: 0 0 0 -40px;
+    width: 65px;
+    height: 70px;
+    margin: 0 0 0 22%;
   }
   .card-shield p {
-    margin-top: 40px;
+    margin-top: 22px;
+    font-size: 14px;
   }
 
-  .title-member {
-    margin-top: 10px;
-    width: 200px;
-    margin-left: 50px;
+  #title-member {
+    margin-top: 15px;
+    font-size: 11px;
+    margin-left: -11px;
   }
-  .card-body {
+  .card-card-body-member {
+    height: 20%;
+  }
+  #title-lives {
+    margin-left: -10px;
+    font-size: 11px;
+  }
+  .card-image {
+    height: 100%;
+    position: absolute;
+  }
+
+  .row-card {
+    height: 10px;
+  }
+
+  .card {
     height: 120px;
-    margin-top: 70px;
-  }
-  .title-lives {
-    width: 200px;
-    margin-left: 35px;
+    width: 145%;
   }
 }
 @media (max-width: 374px) {
   .card-member {
-    width: 200px;
-    height: 120px;
+    width: 123%;
   }
   .card-shield {
-    width: 120px;
-    margin: 0 0 0 -40px;
+    width: 45%;
+    height: 70px;
+    margin: 0 0 0 21%;
   }
   .card-shield p {
-    margin-top: 40px;
+    margin-top: 26px;
+    font-size: 14px;
   }
 
-  .title-member {
-    margin-top: 10px;
-    width: 200px;
-    margin-left: 50px;
+  #title-member {
+    margin-top: 19px;
+    font-size: 10px;
+    margin-left: -12px;
   }
-  .card-body {
+  .card-card-body-member {
+    height: 20%;
+  }
+  #title-lives {
+    margin-left: -12px;
+    font-size: 11px;
+  }
+  .card-image {
+    height: 100%;
+    position: absolute;
+  }
+
+  .row-card {
+    height: 10px;
+  }
+
+  .card {
     height: 120px;
-    margin-top: 70px;
-  }
-  .title-lives {
-    width: 200px;
-    margin-left: 35px;
+    width: 145%;
   }
 }

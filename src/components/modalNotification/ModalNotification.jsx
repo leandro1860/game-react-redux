@@ -1,5 +1,4 @@
 import React from "react";
-import "./modalNotification.css";
 import {Modal, Button} from "react-bootstrap";
 
 function ModalNotification(props) {

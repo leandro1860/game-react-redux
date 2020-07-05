@@ -1,6 +1,22 @@
 .game-card {
-  width: 145px;
-  height: 180px;
+  width: 87%;
+  height: 120px;
+}
+
+.activeCard {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  cursor: pointer;
+  margin-top: 0;
+}
+
+.disabledCard {
+  position: absolute;
+  width: 100%;
+  height: 120px;
+  cursor: no-drop;
+  margin-top: 0;
 }
 
 .title-card {
@@ -8,11 +24,51 @@
   color: white;
   text-align: center;
   margin-top: -30px;
+  height: 2px;
 }
 .card-value {
   color: white;
   font-size: 100px;
   text-align: center;
+  margin-top: -20px;
+}
+
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .game-card {
+    width: 65%;
+    height: 180px;
+  }
+  .activeCard {
+    height: 180px;
+  }
+  .disabledCard {
+    height: 180px;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1199px) {
+  .game-card {
+    width: 90%;
+    height: 220px;
+  }
+  .activeCard {
+    height: 220px;
+  }
+  .disabledCard {
+    height: 220px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 999px) {
+  .game-card {
+    width: 90%;
+    height: 180px;
+  }
+  .activeCard {
+    height: 180px;
+  }
+  .disabledCard {
+    height: 180px;
+  }
 }
 
 @media (min-width: 577px) and (max-width: 768px) {
@@ -20,17 +76,81 @@
     width: 100px;
     height: 135px;
   }
+  .activeCard {
+    height: 135px;
+  }
+  .disabledCard {
+    height: 135px;
+  }
   .title-card {
-    margin-top: 70px;
+    font-size: 13px;
+    margin-top: -30px;
+  }
+  .card-value {
+    margin-top: -27px;
+    font-size: 80px;
   }
 }
 
 @media (min-width: 480px) and (max-width: 576px) {
   .game-card {
-    width: 85px;
+    width: 100px;
+    height: 135px;
+  }
+  .activeCard {
+    height: 135px;
+  }
+  .disabledCard {
     height: 135px;
   }
   .title-card {
-    margin-top: 20px;
+    font-size: 13px;
+    margin-top: -30px;
+  }
+  .card-value {
+    margin-top: -27px;
+    font-size: 80px;
+  }
+}
+@media (min-width: 375px) and (max-width: 479px) {
+  .game-card {
+    width: 115%;
+    height: 135px;
+    margin-top: 30px;
+  }
+  .activeCard {
+    height: 135px;
+  }
+  .disabledCard {
+    height: 135px;
+  }
+  .title-card {
+    font-size: 13px;
+    margin-top: -30px;
+  }
+  .card-value {
+    margin-top: -27px;
+    font-size: 80px;
+  }
+}
+@media (max-width: 374px) {
+  .game-card {
+    width: 124%;
+    height: 135px;
+    margin-top: 30px;
+  }
+  .activeCard {
+    height: 135px;
+  }
+  .disabledCard {
+    height: 135px;
+  }
+  .title-card {
+    font-size: 13px;
+    margin-top: -30px;
+  }
+  .card-value {
+    margin-top: -27px;
+    font-size: 80px;
   }
 }

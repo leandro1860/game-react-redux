@@ -27,9 +27,6 @@
   }
 }
 @media (max-width: 374px) {
-  .create-game {
-    margin-top: 200px;
-  }
   .welcome-title {
     width: 250px;
   }
