@@ -1,5 +1,11 @@
 import React, {useState} from "react";
-import {FormGroup, FormControl, Button, Container} from "react-bootstrap";
+import {
+  Form,
+  FormGroup,
+  FormControl,
+  Button,
+  Container
+} from "react-bootstrap";
 import axios from "axios";
 import {useDispatch} from "react-redux";
 import {useHistory} from "react-router-dom";
@@ -11,18 +17,30 @@ const CreateGame = () => {
   const history = useHistory();
 
   const [playerName, setPlayerName] = useState("");
+  const [validated, setValidated] = useState(false);
+
+  const getGame = async name => {
+    try {
+      await axios
+        .post("http://game.bons.me/api/games?name", {name})
+        .then(res => {
+          const {data} = res;
+          dispatch(gameDataAction.setData(data));
+          history.push("/board");
+        });
+    } catch (err) {
+      console.error(err);
+    }
+  };
+
   const handleChangeText = e => {
     setPlayerName(e.target.value);
   };
 
-  const getGame = async name => {
-    await axios
-      .post("http://game.bons.me/api/games?name", {name})
-      .then(res => {
-        const {data} = res;
-        dispatch(gameDataAction.setData(data));
-        history.push("/board");
-      });
+  const handleSubmit = event => {
+    event.preventDefault();
+    setValidated(true);
+    getGame(playerName);
   };
 
   return (
@@ -33,23 +51,22 @@ const CreateGame = () => {
           <h3>What´s your name?</h3>
         </div>
         <div className='entry-form'>
-          <form
-            onSubmit={e => {
-              e.preventDefault();
-            }}
-          >
+          <Form validated={validated} noValidate onSubmit={handleSubmit}>
             <FormGroup>
               <FormControl
                 type='text'
-                placeholder='write here...'
+                placeholder='Your name...'
                 onChange={handleChangeText}
                 required
               />
+              <Form.Control.Feedback type='invalid'>
+                Please provide a name.
+              </Form.Control.Feedback>
             </FormGroup>
-            <Button type='submit' block onClick={() => getGame(playerName)}>
+            <Button block type='submit'>
               LET´S PLAY
             </Button>
-          </form>
+          </Form>
         </div>
       </div>
     </Container>
