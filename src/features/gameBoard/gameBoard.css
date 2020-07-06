@@ -38,7 +38,37 @@
   margin-top: 220px;
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .rowCards {
+    width: 85%;
+  }
+  .player {
+    width: 73%;
+    margin-top: 60px;
+  }
+  .cards {
+    margin-top: 60px;
+  }
+  .messageCard {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
+  .rowCards {
+    width: 85%;
+  }
+  .player {
+    width: 73%;
+    margin-top: 110px;
+  }
+  .cards {
+    margin-top: 115px;
+  }
+  .messageCard {
+    margin-top: 4px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
   .rowCards {
     width: 85%;
   }
@@ -152,12 +182,15 @@
   .messageCard {
     position: absolute;
     margin-top: 2px;
-    width: 90%;
+    width: 95%;
     font-size: 13px;
   }
 }
 
 @media (max-width: 374px) {
+  .game-member-board {
+    margin-top: 30px;
+  }
   .cards {
     margin-top: 64px;
   }

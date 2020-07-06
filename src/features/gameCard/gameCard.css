@@ -37,8 +37,19 @@
   text-align: center;
   margin-top: -20px;
 }
-
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .game-card {
+    width: 65%;
+    height: 180px;
+  }
+  .activeCard {
+    height: 180px;
+  }
+  .disabledCard {
+    height: 180px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
   .game-card {
     width: 65%;
     height: 180px;

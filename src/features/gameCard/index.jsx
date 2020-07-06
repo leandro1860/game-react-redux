@@ -45,7 +45,7 @@ const GameCard = () => {
             <Card.Body
               className={`${
                 horrorCard === "HORROR"
-                  ? "disabledCard bg-secondary"
+                  ? "disabledCard bg-danger"
                   : " activeCard bg-success  "
               } ${selectedCard === id ? "bg-info" : "bg-success"}`}
               onClick={() =>

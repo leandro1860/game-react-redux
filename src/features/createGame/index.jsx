@@ -41,11 +41,12 @@ const CreateGame = () => {
             <FormGroup>
               <FormControl
                 type='text'
-                placeholder='NAME'
+                placeholder='write here...'
                 onChange={handleChangeText}
+                required
               />
             </FormGroup>
-            <Button block onClick={() => getGame(playerName)}>
+            <Button type='submit' block onClick={() => getGame(playerName)}>
               LET´S PLAY
             </Button>
           </form>

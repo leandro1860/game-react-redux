@@ -51,7 +51,25 @@
   width: 100%;
 }
 
-@media (min-width: 1200px) and (max-width: 1300px) {
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .game-board-turns {
+    height: 540px;
+    margin-top: -540px;
+  }
+  .game-button {
+    width: 135px;
+    height: 50px;
+    margin-top: 130px;
+    margin-left: -2px;
+  }
+  .current-past-left {
+    margin-top: 30px;
+  }
+  .game-button {
+    margin-top: 67px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1299px) {
   .game-board-turns {
     height: 645px;
     margin-top: -645px;
