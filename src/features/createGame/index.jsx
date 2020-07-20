@@ -47,7 +47,7 @@ const CreateGame = () => {
     <Container>
       <div className='create-game'>
         <div className='welcome-title'>
-          <h1>Welcome to Bons Game</h1>
+          <h1>Welcome to Game</h1>
           <h3>What´s your name?</h3>
         </div>
         <div className='entry-form'>

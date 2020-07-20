@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `Installation`
 
-- git clone https://github.com/leandro1860/bons-reactjs-challenge.git
+- git clone https://github.com/leandro1860/game-made-with-react.git
 
-- cd bons-reactjs-challenge
+- cd game-made-with-react
 
 - yarn install or npm install
 
