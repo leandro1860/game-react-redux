@@ -6,9 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### `Installation`
 
-- git clone https://github.com/leandro1860/game-made-with-react.git
+- git clone https://github.com/leandro1860/game-react-redux.git
 
-- cd game-made-with-react
+- cd game-react-redux
 
 - yarn install or npm install
 
