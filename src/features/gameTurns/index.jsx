@@ -34,33 +34,31 @@ const GameTurns = ({currentTurn, past, turnsLeft}) => {
     await getMonster(gameId);
 
     if (
-      (monsterData.shield > playerData.shield &&
-        fullGameData.turnsLeft === 0) ||
+      (monsterData.hp > playerData.hp && fullGameData.turnsLeft === 0) ||
       (playerData.hp === 0 && monsterData.hp > 0)
     ) {
       setModalShow(true);
       setGameResult("Ups.. you lose! :(");
       setGameStatistics(
-        `${monsterData.name}: ${monsterData.shield} ... ${playerData.name}: ${playerData.shield}`
+        `${monsterData.name}: ${monsterData.hp} ... ${playerData.name}: ${playerData.hp}`
       );
     } else if (
-      monsterData.shield === playerData.shield &&
+      monsterData.hp === playerData.hp &&
       fullGameData.turnsLeft === 0
     ) {
       setModalShow(true);
       setGameResult("It's a draw");
       setGameStatistics(
-        `${monsterData.name}: ${monsterData.shield} ... ${playerData.name}: ${playerData.shield}`
+        `${monsterData.name}: ${monsterData.hp} ... ${playerData.name}: ${playerData.hp}`
       );
     } else if (
-      (monsterData.shield < playerData.shield &&
-        fullGameData.turnsLeft === 0) ||
+      (monsterData.hp < playerData.hp && fullGameData.turnsLeft === 0) ||
       (playerData.hp > 0 && monsterData.hp === 0)
     ) {
       setModalShow(true);
       setGameResult("Congratulations! You Win! (:");
       setGameStatistics(
-        `${monsterData.name}: ${monsterData.shield} ... ${playerData.name}: ${playerData.shield}`
+        `${monsterData.name}: ${monsterData.hp} ... ${playerData.name}: ${playerData.hp}`
       );
     }
   };
