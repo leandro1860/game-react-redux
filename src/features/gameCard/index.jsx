@@ -27,7 +27,7 @@ const GameCard = () => {
 
   useEffect(() => {
     getCards(playerData);
-  }, [dispatch, playerData]);
+  }, [playerData]);
 
   const horrorCard = monsterData.effect;
 
