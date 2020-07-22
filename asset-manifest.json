@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/game-react-redux/static/css/main.dbd99f2e.chunk.css",
+    "main.js": "/game-react-redux/static/js/main.0d721816.chunk.js",
+    "main.js.map": "/game-react-redux/static/js/main.0d721816.chunk.js.map",
+    "runtime-main.js": "/game-react-redux/static/js/runtime-main.1de6bda1.js",
+    "runtime-main.js.map": "/game-react-redux/static/js/runtime-main.1de6bda1.js.map",
+    "static/css/2.ace36aee.chunk.css": "/game-react-redux/static/css/2.ace36aee.chunk.css",
+    "static/js/2.7399964c.chunk.js": "/game-react-redux/static/js/2.7399964c.chunk.js",
+    "static/js/2.7399964c.chunk.js.map": "/game-react-redux/static/js/2.7399964c.chunk.js.map",
+    "index.html": "/game-react-redux/index.html",
+    "precache-manifest.94647ae1e73b0bf2ee385d184cfb37af.js": "/game-react-redux/precache-manifest.94647ae1e73b0bf2ee385d184cfb37af.js",
+    "service-worker.js": "/game-react-redux/service-worker.js",
+    "static/css/2.ace36aee.chunk.css.map": "/game-react-redux/static/css/2.ace36aee.chunk.css.map",
+    "static/css/main.dbd99f2e.chunk.css.map": "/game-react-redux/static/css/main.dbd99f2e.chunk.css.map",
+    "static/js/2.7399964c.chunk.js.LICENSE.txt": "/game-react-redux/static/js/2.7399964c.chunk.js.LICENSE.txt",
+    "static/media/playerImage.jpg": "/game-react-redux/static/media/playerImage.486a5d5c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1de6bda1.js",
+    "static/css/2.ace36aee.chunk.css",
+    "static/js/2.7399964c.chunk.js",
+    "static/css/main.dbd99f2e.chunk.css",
+    "static/js/main.0d721816.chunk.js"
+  ]
+}
